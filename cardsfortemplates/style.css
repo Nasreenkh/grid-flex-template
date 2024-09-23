@@ -1,0 +1,127 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #3f65cc;
+}
+h1{
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.cards-container {
+    margin-top: 14%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.card {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px pink;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+
+.template-grid {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "article text1"
+        "article text2"
+        "bottom bottom"
+        "footer footer";
+    gap: 10px;
+}
+
+.header, .article, .text1, .text2, .bottom, .footer {
+    background-color: #3f65cc;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header { grid-area: header; }
+.article { grid-area: article; }
+.text1 { grid-area: text1; }
+.text2 { grid-area: text2; }
+.bottom { grid-area: bottom; }
+.footer { grid-area: footer; }
+
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "article text1"
+        "article text2"
+        "bottom bottom"
+        "footer footer";
+    gap: 10px;
+}
+
+.header, .article, .text1, .text2, .bottom, .footer {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.header { grid-area: header; }
+.article { grid-area: article; }
+.text1 { grid-area: text1; }
+.text2 { grid-area: text2; }
+.bottom { grid-area: bottom; }
+.footer { grid-area: footer; }
+
+.flexbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.flex-header {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%; 
+}
+.flex-article {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 40%; 
+    height: 70px;
+}
+.flex-text1, .flex-text2 {
+    background-color:navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 38%; 
+    margin-left: 50%;
+    position: relative;
+    left: 10px;
+    bottom: 100px;
+ 
+}
+.flex-bottom, .flex-footer {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%; 
+    position: relative;
+    bottom: 100px;
+}
